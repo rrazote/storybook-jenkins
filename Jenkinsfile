@@ -3,7 +3,17 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'node --version'
+                echo 'building...'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'testing...'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploying...'
             }
         }
     }
